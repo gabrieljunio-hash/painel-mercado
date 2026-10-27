@@ -1,1 +1,0 @@
-Integração GitHub testada com sucesso.
