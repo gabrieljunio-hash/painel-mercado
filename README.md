@@ -14,8 +14,18 @@ Painel brasileiro de mercados financeiros e agronegócio, com simulador de juros
 - GitHub Pages hospeda arquivos estáticos e não executa backend. Não coloque credenciais privadas no HTML.
 
 ## Arquivos
-- `index.html`: frontend estático.
+- `index.html`: página inicial.
+- `mercados.html`: gráficos de mercados financeiros.
+- `agro.html`: painel geral de agronegócio.
+- `cafe.html`, `soja.html`, `boi-gordo.html`: páginas específicas com contexto, gráficos e fontes de cotação.
+- `simulador.html`: simulador de juros compostos.
+- `sitemap.xml` e `robots.txt`: suporte básico ao rastreamento por buscadores.
 - `supabase/schema.sql`: esquema inicial para perfis, favoritos, alertas, painéis, simulações e cotações com RLS.
+
+## SEO e conteúdo
+- Cada funcionalidade principal tem uma página própria com título, descrição e URL canônica.
+- O sitemap lista as páginas públicas; a indexação depende dos rastreadores e pode ser acompanhada no Google Search Console.
+- As páginas de commodities explicam diferenças entre preço físico e contrato futuro e encaminham para fontes originais; os valores físicos ainda não são importados automaticamente.
 
 ## Próximos passos
 1. Criar e configurar projeto Supabase, Auth e URLs de retorno.
